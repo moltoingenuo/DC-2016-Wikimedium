@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width">
 
     <title>Wikimedium</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
 
-    <style>
-      body {
-        background-image: url(images/index_mockup.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-    </style>
+    <meta name="description" content="Статьи из Википедии, свёрстанные студентами для обучения основам веб-вёрстки в рамках образовательного проекта Hack Exchange.">
+    <meta name="keywords" content="hack, exchange, html, css, javascript, hse, design, rap, yo">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery-3.1.1.js"></script>
+    <script src="javascripts/social-likes.min.js"></script>
   </head>
-  <body>
+  <body class="posts">
     <nav class="menubar">
       <a class="logo" href="#"></a>
       <a href="#">О проекте</a>
@@ -23,11 +20,32 @@
 
     <section class="postsFeed">
       <a href="narkomfin.html">
-        <figure></figure>
-        <h2>Дом Наркомфина - жилой дом переходного типа</h2>
+        <figure style="background-image: url(images/narkomfin.jpg);"></figure>
+        <h2>Дом Наркомфина</h2>
         <p>Жилой дом переходного типа, построенный в 1930 году по проекту архитекторов Моисея Гинзбурга и Игнатия Милиниса для работников Народного комиссариата финансов СССР (Наркомфина). Находится в Москве на Новинском бульваре по адресу дом № 25, корпус 1. Дом Наркомфина является памятником архитектуры конструктивизма.</p>
       </a>
+
+      <a href="centrosouz.html">
+        <figure style="background-image: url(images/centrosouz.jpg);"></figure>
+        <h2>Здание Центросоюза</h2>
+        <p>Здание Центросоюза (Наркомлегпрома) — офисное здание, возведённое в 1928—1936 годах в центре Москвы по проекту Ле Корбюзье, при участии П. Жаннере и Н. Я. Колли. Представляет собой комплекс корпусов, обращённый одновременно на две параллельные улицы — Мясницкую и проспект Академика Сахарова. Здание относится к числу наиболее интересных архитектурных раритетов не только Москвы, но и мира, представляя собой созданный знаменитым архитектором образец европейского модернизма конца 20-х годов XX века.</p>
+      </a>
+
+      <a href="shukhov.html">
+        <figure style="background-image: url(images/shukhov.jpg);"></figure>
+        <h2>Владимир Григорьевич Шухов</h2>
+        <p>Владимир Григорьевич Шухов (1853—1939) — русский, советский инженер, архитектор, изобретатель, учёный; член-корреспондент (1928) и почётный член (1929) Академии наук СССР, лауреат премии имени В. И. Ленина (1929), Герой Труда (1932). Является автором проектов и техническим руководителем строительства первых российских нефтепроводов (1878) и нефтеперерабатывающего завода с первыми российскими установками крекинга нефти (1931). Внёс выдающийся вклад в технологии нефтяной промышленности и трубопроводного транспорта.</p>
+      </a>
     </section>
+
+    <footer>
+      <div class="social-likes social-likes_single" data-single-title="Поделиться">
+        <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+        <div class="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+        <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+        <div class="pinterest" title="Поделиться картинкой на Пинтересте" data-media="">Pinterest</div>
+      </div>
+    </footer>
 
   </body>
 </html>
