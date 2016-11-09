@@ -4,9 +4,10 @@
 
 @import"layout.css";
 @import"menubar.css";
+@import"share.css";
 
-/* index */
-@import"index.css";
+/* posts */
+@import"posts.css";
 
 /* post */
 @import"sidebar.css";
