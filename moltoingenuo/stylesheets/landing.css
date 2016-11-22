@@ -1,10 +1,28 @@
-.mainSection {
-  height: 800px;
+body.landing.bg {
+  height: 3200px;
+  background-image: url(../images/favicon.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.mainSection section {
-  position: absolute;
-  margin: 147px 0 0 160px;
+.landingWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  width: 1440px;
+  min-width: 1180px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+
+.mainSection {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  overflow: hidden;
 }
 
 .mainSection h2 {
@@ -19,9 +37,148 @@
   line-height: 38px;
 }
 
+.mainSection.center {
+  text-align: center;
+}
+
+.mainSection.center h2 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.mainSection.center p {
+  margin-top: 27px;
+}
+
+.mainSection.center section {
+  width: 100%;
+}
+
+.mainSection section {
+  position: absolute;
+  top: 147px;
+  width: 580px;
+}
+
+.mainSection.left section {
+  left: 160px;
+}
+
+.mainSection.right section {
+  right: 160px;
+}
+
 .mainSection section figure {
   width: 210px;
   height: 20px;
   margin-top: 235px;
-  background: green;
+  background: url(../images/pattern.svg);
+}
+
+.mainSection.left section figure {
+  margin-left: -60px;
+}
+
+.mainSection.right section figure {
+  margin-left: 430px;
+}
+
+.mockup {
+  position: absolute;
+  background-size: cover;
+}
+
+#mockup1 {
+  top: 115px;
+  right: -82px;
+  width: 701px;
+  height: 660px;
+  background-image: url(../images/landing/landing-mockup-1.jpg);
+}
+
+#mockup2 {
+  top: 97px;
+  left: 100px;
+  width: 532px;
+  height: 670px;
+  background-image: url(../images/landing/landing-mockup-2.jpg);
+}
+
+#mockup3 {
+
+}
+
+@media screen and (max-width: 1460px) {
+  .landingWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  body.landing.bg {
+    background-image: url(../images/index_mockup_ipad.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .landingWrapper {
+    width: 100%;
+  }
+
+  .mainSection {
+    width: 1180px;
+    height: 568px;
+  }
+
+  .mainSection h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .mainSection p {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .mainSection section {
+    top: 100px;
+    width: 400px;
+  }
+
+  .mainSection.left section {
+    left: 190px;
+  }
+
+  .mainSection.right section {
+    right: 190px;
+  }
+
+  .mainSection section figure {
+    width: 147px;
+    height: 14px;
+    margin-top: 170px;
+  }
+
+  .mainSection.left section figure {
+    margin-left: -48px;
+  }
+
+  .mainSection.right section figure {
+    margin-left: 303px;
+  }
+
+  #mockup1 {
+    top: 85px;
+    right: 33px;
+    width: 521px;
+    height: 470px;
+  }
+
+  #mockup2 {
+    top: 70px;
+    left: 148px;
+    width: 380px;
+    height: 478px;
+  }
 }
