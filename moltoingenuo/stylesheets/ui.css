@@ -1,0 +1,55 @@
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+}
+
+
+.white {
+  background-color: white;
+  border-color: rgba(0,0,0,0.2);
+  color: rgba(0,0,0,.6);
+}
+
+.green {
+  background-color: rgb(100,243,100);
+  background-image: linear-gradient(to bottom, rgba(100,243,100,1) 2%,rgba(43,212,43,1) 7%,rgba(1,164,1,1) 95%,rgba(0,105,0,1) 100%);
+  background-color: #00C000;
+  color: white;
+}
+
+.small {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.large {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  border-color: #00C000;
+  font-size: 17px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1180px) {
+  .small {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+
+  .large {
+    width: 214px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #00C000;
+    font-size: 12px;
+  }
+}

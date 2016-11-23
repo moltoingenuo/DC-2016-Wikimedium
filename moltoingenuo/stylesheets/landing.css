@@ -51,6 +51,7 @@ body.landing.bg {
 }
 
 .mainSection.center section {
+  top: 182px;
   width: 100%;
 }
 
@@ -82,6 +83,27 @@ body.landing.bg {
 .mainSection.right section figure {
   margin-left: 430px;
 }
+
+.mainSection.center section nav {
+  margin-top: 70px;
+  font-size: 0;
+}
+
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.mainSection.center footer p {
+  font-size: 16px;
+}
+
 
 .mockup {
   position: absolute;
@@ -147,6 +169,15 @@ body.landing.bg {
     line-height: 27px;
   }
 
+  .mainSection.center h2 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .mainSection.center p {
+    margin-top: 21px;
+  }
+
   .mainSection section {
     top: 100px;
     width: 400px;
@@ -158,6 +189,10 @@ body.landing.bg {
 
   .mainSection.right section {
     right: 190px;
+  }
+
+  .mainSection.center section {
+    top: 132px;
   }
 
   .mainSection section figure {
@@ -172,6 +207,18 @@ body.landing.bg {
 
   .mainSection.right section figure {
     margin-left: 303px;
+  }
+
+  .mainSection.center section nav {
+    margin-top: 50px;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+
+  .mainSection.center footer p {
+    font-size: 12px;
   }
 
   #mockup1 {
