@@ -5,15 +5,21 @@ body.landing.bg {
   background-position: top center;
 }
 
+body.landing * {
+  transition: all .3s ease;
+}
+
+.compact {
+  display: none;
+}
+
 .landingWrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
   width: 1440px;
-  min-width: 1180px;
   margin: 0 auto;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 }
@@ -98,12 +104,12 @@ body.landing.bg {
   bottom: 0;
   right: 0;
   width: 100%;
+  padding-bottom: 35px;
 }
 
 .mainSection.center footer p {
   font-size: 16px;
 }
-
 
 .mockup {
   position: absolute;
@@ -164,18 +170,18 @@ body.landing.bg {
   }
 
   .mainSection p {
-    margin-top: 18px;
-    font-size: 18px;
-    line-height: 27px;
+    margin-top: 21px;
+    font-size: 26px;
+    line-height: 38px;
   }
 
   .mainSection.center h2 {
-    font-size: 28px;
-    line-height: 37px;
+    font-size: 36px;
+    line-height: 46px;
   }
 
   .mainSection.center p {
-    margin-top: 21px;
+    margin-top: 35px;
   }
 
   .mainSection section {
@@ -217,10 +223,6 @@ body.landing.bg {
     margin: 0 6px;
   }
 
-  .mainSection.center footer p {
-    font-size: 12px;
-  }
-
   #mockup1 {
     top: 85px;
     right: 33px;
@@ -240,5 +242,103 @@ body.landing.bg {
     right: -414px;
     width: 960px;
     height: 555px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  body.landing.bg {
+    background-image: url(../images/index_mockup_ipad_portrait.png);
+  }
+
+  .full {
+    display: none;
+  }
+
+  .compact {
+    display: block;
+  }
+
+  .mainSection {
+    width: 910px;
+    height: 1024px;
+  }
+
+  .mainSection h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .mainSection p {
+    margin-top: 21px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .mainSection.center h2 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .mainSection.center p {
+    margin-top: 21px;
+  }
+
+  .mainSection section {
+    top: 90px;
+    width: 580px;
+  }
+
+  .mainSection.left section,
+  .mainSection.right section {
+    left: 165px;
+  }
+
+  .mainSection.center section {
+    top: 260px;
+  }
+
+  .mainSection section figure {
+    width: 210px;
+    height: 20px;
+    margin-top: 50px;
+  }
+
+  .mainSection.left section figure,
+  .mainSection.right section figure {
+    margin-left: -60px;
+  }
+
+  .mainSection:nth-child(3) section figure {
+    margin-left: 430px;
+  }
+
+  .mainSection.center section nav {
+    margin-top: 50px;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+
+  #mockup1 {
+    top: 375px;
+    right: -34px;
+    width: 621px;
+    height: 560px;
+  }
+
+  #mockup2 {
+    top: 415px;
+    left: 333px;
+    width: 464px;
+    height: 584px;
+  }
+
+  #mockup3 {
+    top: auto;
+    bottom: 0px;
+    right: -30px;
+    width: 836px;
+    height: 483px;
   }
 }

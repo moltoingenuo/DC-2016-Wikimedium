@@ -37,7 +37,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) and (min-width: 911px) {
   .small {
     width: 180px;
     height: 30px;
