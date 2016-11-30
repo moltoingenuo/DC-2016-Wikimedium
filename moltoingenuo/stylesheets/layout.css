@@ -8,13 +8,15 @@ a {
 }
 
 body {
+  width: 100%;
   min-width: 768px;
  font-family: 'PT Sans', sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
 }
 
-body.posts {
+body.posts,
+body.landing {
   background-color: #FAFAFA;
 }
 
@@ -28,4 +30,10 @@ body.landing .menubar {
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
   z-index: 1;
+}
+
+body.posts .menubar,
+body.landing .menubar div {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
 }
